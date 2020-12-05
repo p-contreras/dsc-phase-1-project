@@ -1,20 +1,23 @@
-# Phase 1 Project
+![movies](images/Movie.jpg)
 
-You've made it all the way through the first phase of this course - take a minute to celebrate your awesomeness!
+# Microsoft Movie Studio Film Industry Analysis
 
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-1-project/master/awesome.gif)
+### Author: <a href="https://www.linkedin.com/in/pcontreras97//">Patricio Contreras</a>
 
-Now you will put your new skills to use with a large end-of-Phase project! This project should take 20 to 30 hours to complete.
+## Overview
 
-## Project Overview
+The purpose of this project is to help the newly formed Microsoft Movie Studio by performing an analysis of the movie industry.  We're particularly interested in identifying successful genres, possible movie studio partnerships, popular foreign-language films, and determine a most sucessful time of the year to release films.  Microsoft Movie Studio can use the results of this analysis to make data-driven decisions and optimise the production of their future movies.
 
-For this project, you will use exploratory data analysis to generate insights for a business stakeholder.
+## Business Problem
 
-### Business Problem
+Microsoft sees all the big companies creating original video content and they want to get in on the fun. They have decided to create a new movie studio, but they don’t know anything about creating movies. They're very interested in knowing more about the movie industry and start off strong in such a competitive field.  In order to do this, this project will focus on gathering data and analysing the following:
 
-Microsoft sees all the big companies creating original video content and they want to get in on the fun. They have decided to create a new movie studio, but they don’t know anything about creating movies. You are charged with exploring what types of films are currently doing the best at the box office. You must then translate those findings into actionable insights that the head of Microsoft's new movie studio can use to help decide what type of films to create.
+* The most successful movie genres in terms of profit made
+* The top 5 movie studios to partner up with by domestic gross box office revenue
+* Best non-English languages in terms of film rating
+* Best time of the year to release a film by domestic gross box office revenue
 
-### The Data
+## The Data
 
 In the folder `zippedData` are movie datasets from:
 
@@ -23,42 +26,53 @@ In the folder `zippedData` are movie datasets from:
 * Rotten Tomatoes
 * TheMovieDB.org
 
-It is up to you to decide what data from this to use and how to use it. If you want to make this more challenging, you can scrape websites or make API calls to get additional data. If you are feeling overwhelmed or behind (e.g. struggled with the Phase 1 Code Challenge), we recommend you use only the following data files:
+This project uses the data provided from Box Office Mojo, IMDb, and TheMovieDB.org.
 
-* imdb.title.basics
-* imdb.title.ratings
-* bom.movie_gross
+## Methods
 
-## Deliverables
+The analysis done for this project is mostly centred around descriptive statistics calculated from the data provided.  These metrics were useful in identifying popular genres, successful movie studios, highly-rated non-English films, and an optimal time to release a movie.
 
-There are three deliverables for this project:
+## Results
 
-* A **GitHub repository**
-* A **Jupyter Notebook**
-* A **non-technical presentation**
+### What are the most successful movie genres in terms of profit made?
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic for instructions on creating and submitting your deliverables. Refer to the rubric associated with this assignment for specifications describing high-quality deliverables.
+"Action" and "Adventure" are the two genres that generate the most profit.  Despite these genres standing out from the rest, "Drama" pairs well with "Biography" and "Comedy" and is included in the top 5:
 
-### Key Points
+![genres](images/genre_profit.png)
 
-* **Your analysis should yield three concrete business recommendations.** The ultimate purpose of exploratory analysis is not just to learn about the data, but to help an organization perform better. Explicitly relate your findings to business needs by recommending actions that you think the business (Microsoft) should take.
+### Which are the top 5 movie studios Microsoft could partner up with?
 
-* **Communicating about your work well is extremely important.** Your ability to provide value to an organization - or to land a job there - is directly reliant on your ability to communicate with them about what you have done and why it is valuable. Create a storyline your audience (the head of Microsoft's new movie studio) can follow by walking them through the steps of your process, highlighting the most important points and skipping over the rest.
+Dreamworks and Disney are the most successful movie studios in terms of domestic gross box office revenue.  Despite both movie studios having widespread distributions, they stand apart from the rest when it comes to revenue.
 
-* **Use plenty of visualizations.** Visualizations are invaluable for exploring your data and making your findings accessible to a non-technical audience. Spotlight visuals in your presentation, but only ones that relate directly to your recommendations. Simple visuals are usually best (e.g. bar charts and line graphs), and don't forget to format them well (e.g. labels, titles).
+![studios](images/studio_gross.png)
 
-## Getting Started
+### Which non-English language yields the highest film ratings?
 
-Please start by reviewing this assignment, the rubric at the bottom of it, and the "Project Submission & Review" page. If you have any questions, please ask your instructor ASAP.
+Films in Swedish or Japanese are the ones with higher ratings than all other languages, on average.  These two have higher median rating compared to the rest.
 
-Next, we recommend you check out [the Phase 1 Project Templates and Examples repo](https://github.com/learn-co-curriculum/dsc-project-template) and use the MVP template for your project.
+![languages](images/lang_rating.png)
 
-Alternatively, you can fork [the Phase 1 Project Repository](https://github.com/learn-co-curriculum/dsc-phase-1-project), clone it locally, and work in the `student.ipynb` file. Make sure to also add and commit a PDF of your presentation to your repository with a file name of `presentation.pdf`.
+### When is the best time of the year to release a film?
 
-## Project Submission and Review
+Films released in the summer months (May, June, July) and the end of the year (November, December) have higher revenues.  Furthermore, end-of-the-year films have the highest rating, on average.
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic to learn how to submit your project and how it will be reviewed. Your project must pass review for you to progress to the next Phase.
+![month](images/month_gross.png)
 
-## Summary
+## Conclusions
 
-This project will give you a valuable opportunity to develop your data science skills using real-world data. The end-of-phase projects are a critical part of the program because they give you a chance to bring together all the skills you've learned, apply them to realistic projects for a business stakeholder, practice communication skills, and get feedback to help you improve. You've got this!
+The analysis done for the newly-formed Microsoft Movie Studio has led us to recommend the following:
+
+* **When deciding what type of film to produce, go with action, adventure, or drama.** These genres are the most profitable.
+* **Partner up with Dreamworks or Disney to ensure great earnings.** These two movie studios stand out from the rest in terms of domestic gross box office revenue.
+* **If producing a non-English film, go with Swedish or Japanese.** Films spoken in these two languages were rated higher than other languages, on average.
+* **Release films in the summer and end-of-the-year months for the highest revenue.** If film rating is more important, release at the end of the year.
+
+### Next Steps
+
+* **Investigate the popular genres released per time of the year.** This analysis could inform Microsoft Movie Studio when to release what type of film.
+* **Identify most prominent genres per movie studio.** This way, Microsoft Movie Studio could see which movie studio is best at a particular genre.
+* **Analyse the relationship between film runtime and rating (or box office revenue).**  Performing this analysis can help Microsoft Movie Studio decide on an appropriate runtime for their films.
+
+## For More Information
+
+To see the full analysis, check out [MovieProject](MovieProject.ipynb).  For a more concise presentation, take a look 
