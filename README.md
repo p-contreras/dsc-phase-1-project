@@ -75,4 +75,4 @@ The analysis done for the newly-formed Microsoft Movie Studio has led us to reco
 
 ## For More Information
 
-To see the full analysis, check out [MovieProject](MovieProject.ipynb).  For a more concise presentation, take a look 
+To see the full analysis, check out [MovieProject](MovieProject.ipynb).  For a more concise presentation, take a look at [presentation.pdf](presentation.pdf).
